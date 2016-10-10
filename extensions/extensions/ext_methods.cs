@@ -14,7 +14,7 @@ namespace extensions
             return originalInt;
         }
 
-        public static int Mutiplication (this int originalInt)
+        public static int Mutiplication(this int originalInt)
         {
             int multNum = originalInt * 10;
             return multNum;
@@ -24,13 +24,16 @@ namespace extensions
         {
 
             int count = 0;
-            for (int i = 0; i < originalString.Length-1; i++)
+            for (int i = 0; i < originalString.Length; i++)
             {
-                if (originalString.Substring(i, 4) == "snow")
+                if (i < originalString.Length - 3)
                 {
+                    if (originalString.Substring(i, 4) == "snow")
+                    {
 
-                    count++;
+                        count++;
 
+                    }
                 }
             }
 
@@ -39,7 +42,7 @@ namespace extensions
 
         }
 
-        public static double Tax (this double dollarAmount)
+        public static double Tax(this double dollarAmount)
         {
             double newAmt = dollarAmount * .06;
             double totalAmt = newAmt + dollarAmount;
@@ -49,22 +52,23 @@ namespace extensions
         public static bool GreaterThan(this int ranNum)
         {
 
-            if (ranNum > 20){
+            if (ranNum > 20)
+            {
                 return true;
 
             }
-            else {
+            else
+            {
                 return false;
             }
 
         }
 
-        //public static char (this  )
-        //{
-        //    double newAmt = dollarAmount * .06;
-        //    double totalAmt = newAmt + dollarAmount;
-        //    return totalAmt;
-        //}
-
+        public static char AmountStars(this string howChar)
+        {
+            
+            return;
+        }
     }
 }
+
