@@ -63,7 +63,9 @@ namespace extensions
             }
 
             //CHAR
-
+            string myString2 = "chicken/beef/duck/turkey";
+            int charCount = myString2.AmountChar();
+            Console.WriteLine(charCount);
 
 
 

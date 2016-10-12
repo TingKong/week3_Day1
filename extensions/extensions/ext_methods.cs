@@ -64,10 +64,19 @@ namespace extensions
 
         }
 
-        public static char AmountStars(this string howChar)
+        public static char AmountChar(this string howChar)
         {
-            
-            return;
+            int charcount = 0;
+            for (int i = 0; i < howChar.Length; i++) {
+                if (howChar.Contains("/"))
+                {
+                    charcount++;
+                }
+            }
+
+            int a = charcount;
+            char b = Convert.ToChar(a);
+            return b;
         }
     }
 }
